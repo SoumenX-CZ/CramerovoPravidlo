@@ -13,6 +13,7 @@ K projektu byla vytvořena jednoduchá webová stránka, na které můžete naj�
 
 Stránka je hostovaná a dostupná na následující adrese:
 [Webová stránka o Cramerově pravidlu](https://cramerovo-pravidlo.netlify.app/)
+
 Zdrojový kód stránky je také součástí tohoto repozitáře v sekci `site`.
 
 
