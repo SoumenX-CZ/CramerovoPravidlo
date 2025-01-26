@@ -7,15 +7,14 @@ Tento projekt se zaměřuje na řešení soustav lineárních rovnic pomocí Cra
 ## Obsah projektu
 
 ### 1. Webová stránka
-K projektu byla vytvořena jednoduchá webová stránka, která vysvětluje:
-- Co je Cramerovo pravidlo.
-- Jak se počítá determinant matice.
+K projektu byla vytvořena jednoduchá webová stránka, na které můžete najít:
+- Výpočet rovnic o dvou neznámých.
 - Příklady praktického použití.
-
-Stránka obsahuje vizuální ukázky a interaktivní sekci pro procvičení výpočtů.
 
 Stránka je hostovaná a dostupná na následující adrese:
 [Webová stránka o Cramerově pravidlu](https://cramerovo-pravidlo.netlify.app/)
+Zdrojový kód stránky je také součástí tohoto repozitáře v sekci `site`.
+
 
 ### 2. Excelový soubor
 Pro uživatele, kteří preferují tabulkový editor, byl vytvořen Excelový soubor, který:
