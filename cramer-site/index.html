@@ -1,0 +1,188 @@
+<html><head><title>Cramerovo pravidlo</title><script type="text/javascript" src="cramer.js"></script>
+    <link rel="shortcut icon" href="icon/function.ico" type="image/x-icon"/></head>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&amp;subset=latin,latin-ext">
+<body>
+<div class="top-nadpis">
+    <img src="https://www.gch.cz/themes/gch/img/logo.png" width="100" alt=""> 
+    <div>
+        <h1>Cramerovo pravidlo - Řešení soustavy rovnic</h1>
+        <p>Dominik Šimon, 3.A</p>
+    </div>
+</div> 
+<div class="nadpis">
+   <h2>Matice 2x2</h2>
+   <div class="line"></div>
+</div>
+<div class="alt2">
+<div>
+<form onkeyup="calcular2()">
+   <input type="text" size="4"></input> x   <input type="text" size="4"></input> y =   <input type="text" size="4"></input> </br>
+   <input type="text" size="4"></input> x   <input type="text" size="4"></input> y =   <input type="text" size="4"></input> </br>
+   
+   x = <input type="text" readonly/>
+   y = <input type="text" readonly/>
+</form>
+</div>
+</div>
+</div>  
+
+<div class="nadpis">
+        <h2>Matice 3x3</h2>
+        <div class="line"></div>
+ </div>
+ <div class="alt2">
+ <div>
+     
+<form onkeyup="calcular()">
+    <input type="text" size="4"></input> x   <input type="text" size="4"></input> y   <input type="text" size="4"></input> z =   <input type="text" size="4"></input> </br>
+    <input type="text" size="4"></input> x   <input type="text" size="4"></input> y   <input type="text" size="4"></input> z =   <input type="text" size="4"></input> </br>
+    <input type="text" size="4"></input> x   <input type="text" size="4"></input> y   <input type="text" size="4"></input> z =   <input type="text" size="4"></input> </br>   
+    
+    x = <input type="text" readonly/>
+    y = <input type="text" readonly/> 
+    z = <input type="text" readonly/>
+</form>
+</div>
+</div>
+</div> 
+<div class="nadpis">
+    <h2>Matice 4x4</h2>
+    <div class="line"></div>
+ </div>
+ <div class="alt2">
+ <div>
+<form onkeyup="calcular4()">
+    <input type="text" size="4"></input> x   <input type="text" size="4"></input> y   <input type="text" size="4"></input> z    <input type="text" size="4"></input> u =   <input type="text" size="4"></input> </br>
+    <input type="text" size="4"></input> x   <input type="text" size="4"></input> y   <input type="text" size="4"></input> z    <input type="text" size="4"></input> u =   <input type="text" size="4"></input> </br>
+    <input type="text" size="4"></input> x   <input type="text" size="4"></input> y   <input type="text" size="4"></input> z    <input type="text" size="4"></input> u =   <input type="text" size="4"></input> </br>
+    <input type="text" size="4"></input> x   <input type="text" size="4"></input> y   <input type="text" size="4"></input> z    <input type="text" size="4"></input> u =   <input type="text" size="4"></input> </br>
+
+    x = <input type="text" readonly/> 
+    y = <input type="text" readonly/>
+    z = <input type="text" readonly/>
+    u = <input type="text" readonly/>
+</form>
+ </div>
+ </div>
+ </div>
+
+ <style>
+    body {
+        font-family:'PT Sans'
+    }
+
+    .nadpis {
+        background-color: #aa5311;
+        color: white;
+        text-align: left;
+        padding-top: 2px;
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    .nadpis h2 {
+        margin-bottom: 5px;
+        font-size: 25px;
+        margin-top: 4px;
+        margin-left: 15px;
+
+    }
+
+    .top-nadpis {
+        background-color: #aa5311;
+        color: white;
+        border-radius: 20px;
+        display: grid;
+        align-items: center; 
+        grid-template-columns: 1fr 3fr 1fr;
+        column-gap: 5px;
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+
+    .top-nadpis div h1 {
+        margin-bottom: 0px;
+        margin-top: 5px;
+    }
+
+    .top-nadpis div p {
+        margin: 0px;
+        margin-bottom: 5px;
+    }
+
+    .line {
+        background-color: #da821e;
+        width: auto;
+        height: 5px;
+    }
+
+    .alt2 {
+        background-color: antiquewhite;
+        border-radius: 0px 0px 20px 20px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    
+    input {
+        border-color: #ffdeb8;
+        border-radius: 5px;
+        border-style: solid;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+
+    form {
+        margin: 0px;
+    }
+
+    img {
+        margin: 10px;
+    }
+
+    @media screen and (max-width: 980px) and (pointer: coarse){
+        .alt2 {
+            font-size: 50px;
+            border-radius: 0px 0px 30px 30px;
+            padding: 25px;
+            margin-bottom: 25px;
+        }
+        input {
+            font-size: 50px;
+            width: 130px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+        img {
+            width: 200px;
+        }
+        .top-nadpis h1 {
+            font-size: 50px;
+            padding-top: 10px;
+        }
+        .top-nadpis p {
+            padding-bottom: 10px;
+            font-size: 30px;
+        }
+        .nadpis h2 {
+            font-size: 45px;
+            margin-left: 25px;
+        }
+
+        .top-nadpis {
+            border-radius: 30px;
+            margin-bottom: 25px;
+        }
+        .nadpis {
+            border-radius: 30px 30px 0px 0px;
+        }
+
+        .line {
+            height: 15px;
+        }
+        
+    }
+
+
+ </style>
+</body>
+</html>
